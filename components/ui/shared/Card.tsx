@@ -39,7 +39,7 @@ const Card = ({training,hasOrderLink,hidePrice,url}:CardProps) => {
                 {training.isFree? 'FREE' : `${training.price}`}
             </span>
             <p className='p-semibold-14 w-min rounded-full bg-grey-500/10 px-4 py-1 text-grey-500 line-clamp-1'>
-                {training.category.name}
+                {training.category?.name}
                 </p>
         </div>}
         <p className='p-medium-16 p-medium-18 text-grey-500'>
